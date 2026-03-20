@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Front-End dev</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
@@ -55,7 +55,7 @@
     height: 50vh;
     border: none;
     margin-top: 50px;
-    margin-right: 30px;
+    margin-right: 10px;
     background-color: transparent;
     box-shadow: 0 10px 50px rgba(211, 214, 233, 0.25);
   }
@@ -204,12 +204,11 @@
   }
 
   .newone {
-    width: 25%;
-    height: 40%;
-    
-    
+    width: 30%;
+    height: 30%;
+    background: transparent;
 
-    border-radius: 20px;
+
 
   }
 
@@ -228,42 +227,43 @@
     height: 200px;
     border-radius: 50%;
     margin-left: 100px;
-    
+
     margin-bottom: 10px;
 
   }
 
-  .menu{
-    background:transparent;
+  .menu {
+    background: transparent;
     box-shadow: 0 10px 50px rgba(211, 214, 233, 0.25);
     margin: 100px;
     border-radius: 20px;
-    height: 500px;
-    flex-wrap: wrap;
+    height: 350%;
+
+    padding: 50px;
   }
 
-  .work{
+  .work {
     display: flex;
-    gap:20%;
+    gap: 20%;
     justify-content: center;
     margin: 7% 5% 2% 5%;
-    flex-wrap: wrap;
-    
-    
+
+
+
   }
 
-  .work1{
+  .work1 {
     display: flex;
-     gap:20%;
+    gap: 20%;
     justify-content: center;
     margin: 7% 5% 2% 5%;
-    flex-wrap: wrap;
-    
-    
-   
+
+
+
+
   }
 
-  .tech{
+  .tech {
     width: 200px;
     height: 150px;
     background-color: transparent;
@@ -272,36 +272,215 @@
     color: white;
     border-radius: 10px;
     cursor: pointer;
-     
+
 
   }
 
-  .tech:hover{
+  .tech:hover {
     transform: scale(1.1);
     transition: 0.9;
-     box-shadow: 0 10px 50px rgba(179, 144, 41, 0.25);
-   
+    box-shadow: 0 10px 50px rgba(179, 144, 41, 0.25);
+
   }
 
-  .front{
+  .front {
     display: flex;
-    gap:5% ;
+    gap: 5%;
+    justify-content: center;
+
+    margin-bottom: 70px;
+
+
+  }
+
+  .clg {
+    color: black;
+    padding: 3px;
+    padding-top: 10px;
+    background-color: transparent;
+
+    font-weight: 500;
+
+  }
+
+  .clgimage {
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 10px 50px rgba(211, 214, 233, 0.25);
+    cursor: pointer;
+  }
+
+
+  .clgimage:hover {
+    transform: scale(1.1);
+    transition: 0.9;
+    box-shadow: 0 10px 50px rgba(179, 144, 41, 0.25);
+    cursor: pointer;
+
+  }
+
+  .collegeproject {
+    display: flex;
+    padding: 5%;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .from {
+    background-color: rgba(61, 61, 141, 0.514);
+
+    border-radius: 20px;
+
+    margin: 0px 15% 30% 15%;
+    flex-wrap: wrap;
+
+
+  }
+
+  .in form {
+    display: grid;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 70px;
-    
+
+
+
+    justify-content: left;
+    margin-left: 20px;
+  }
+
+  .in form label {
+    text-align: left;
+    float: left;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
 
   }
 
-  .clg{
-    color:black;
-    padding: 3px;
+  .in form input {
+    width: 200%;
+    flex-wrap: wrap;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-weight: 500;
+
     background-color: transparent;
-    font-weight: 800;
-    
   }
 
-  
+  .in form textarea {
+    width: 200%;
+    border: none;
+    box-shadow: 0 10px 50px rgba(211, 214, 233, 0.25);
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 100px;
+    padding: 10px;
+
+
+
+    outline: none;
+    background-color: transparent;
+  }
+
+  .continar {
+    padding-bottom: 30px;
+    display: flex;
+
+
+  }
+
+
+
+  .sub img {
+    width: 180px;
+    height: 180px;
+    border-radius: 5%;
+    float: right;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-right: 200px;
+  }
+
+  .sub img:hover {
+    transform: scale(1.1);
+    transition: 0.9;
+  }
+
+
+  .mecan {
+
+
+    justify-content: left;
+    text-align: left;
+    float: right;
+    right: 20px;
+    margin-right: 100px;
+    padding-top: 20px;
+  }
+
+
+  .mecan h3 {
+    font-size: 17px;
+    color: white;
+
+  }
+
+  .icon {
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    gap: 0px;
+  }
+
+  .icon i {
+
+    padding-right: 0;
+    font-size: 25px;
+    margin-left: 20px;
+
+  }
+
+  .con h2 {
+    background-color: aqua;
+
+    border-radius: 20px;
+
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+
+    color: white;
+  }
+
+  .btn {
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 0px;
+    justify-content: center;
+    float: right;
+    margin-left: 50%;
+    width: 100%;
+    font-weight: 300;
+
+  }
+
+  .rcb {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+  }
+
+
+
+
+
+
+
 
 
 
@@ -309,29 +488,30 @@
   @media(max-width:1250px) {
     .container {}
 
-    .front{
-      
+    .front {
+
       display: grid;
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 30px;
       margin: 40px;
-      
+
     }
 
     .we {
-      width: 17vh;
-      height: 17vh;
+      width: 18vh;
+      height: 20vh;
     }
 
     .hh {
-      padding-top: 60px;
+      padding-top: 70px;
       color: white;
-      font-size: 24px;
+      font-size: 12px;
       text-align: left;
+
     }
 
     .hh2 {
-      font-size: 26px;
+      font-size: 18px;
       color: rgba(11, 39, 194, 0.904);
     }
 
@@ -356,8 +536,10 @@
       width: 70px;
       height: 70px;
       border-radius: 50%;
-      margin-left: 50px;
-      margin-top: 30px;
+      margin-left: 200px;
+      margin-top: 50px;
+
+
 
 
       margin-right: 200px;
@@ -378,92 +560,261 @@
     .aboutme {
       background-color: transparent;
       box-shadow: 0 10px 50px rgba(211, 214, 233, 0.25);
-      padding-top: 30px;
-      margin: 30px;
-      padding-bottom: 200px;
+      padding-top: 20px;
+      margin: 10px;
+      padding-bottom: 120px;
+      justify-content: center;
+      align-items: center;
     }
 
-    .tech{
+    .tech {
       margin: 0px;
       width: 160px;
 
-  
+
     }
 
     .textme {
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      padding-left: 30px;
+      padding-left: 5px;
       color: white;
       margin-bottom: 100px;
       padding-top: 4px;
-      font-size: 16px;
+      font-size: 15px;
     }
 
     .card-text {
       margin-left: 10px;
-      font-size: 15px;
+      font-size: 10px;
       color: white;
       padding-top: 150px;
 
     }
 
-    
-  .marquee {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 20px 0;
-  }
 
-  .text {
-    display: inline-block;
-    transform: translateX(-100);
-    font-size: 26px;
-    animation: moveLeft 40s linear infinite;
-  }
+    .marquee {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 20px 0;
+    }
 
-    .text img{
+    .text {
+      display: inline-block;
+      transform: translateX(-100);
+      font-size: 26px;
+      animation: moveLeft 40s linear infinite;
+    }
+
+    .text img {
       width: 100px;
       height: 100px;
     }
 
-  @keyframes moveLeft {
-    from {
-      transform: translateX(0);
+    @keyframes moveLeft {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
     }
 
-    to {
-      transform: translateX(-50%);
-    }
-  }
 
-    .menu{
-      margin: 20px;
-      height: 800px;
 
-    }
-
-    
     .newone {
-    width: 80%;
-    height: 40%;
-    padding-bottom: 20px;
+      width: 40vmax;
+
+      height: 40%;
+
+      padding-left: 10px;
+
+
+      left: 0;
+      justify-content: space-around;
+
+
+
+
+
+      display: grid;
+
+
+
+
+    }
+
+
+
+
+    .menu {
+      margin: 10px;
+      height: 800px;
+      padding: 1px;
+
+    }
+
+    .work {
+      position: static;
+      left: 0;
+
+      display: grid;
+
+
+      display: inline-flexbox;
+
+      flex-direction: column;
+      margin-bottom: 20%;
+
+    }
+
+    .work1 {
+      flex-direction: column;
+      position: static;
+      left: 0;
+      display: grid;
+
+
+      display: inline-flexbox;
+
+
+      margin-top: 40%;
+
+      top: 20px;
+      bottom: 0;
+
+    }
+
+
+
+    .collegeproject {
+      display: grid;
+      flex-direction: column;
+    }
+
+    .rcb {
+      font-size: 15px;
+      width: 10px;
+      text-align: center;
+      padding-left: 10px;
+
+    }
+
+    .from {
+      background-color: rgba(61, 61, 141, 0.514);
+
+      border-radius: 10px;
+
+      margin: 15% 5% 30% 5%;
+      flex-wrap: wrap;
+
+      padding-bottom: 360px;
+
+      height: 80%;
+
+
+
+    }
+
+    .in form input {
+      width: 100%;
+      flex-wrap: wrap;
+      border: none;
+      border-bottom: 1px solid white;
+      outline: none;
+      color: white;
+      font-weight: 500;
+
+      background-color: transparent;
+    }
+
+
+    .in form textarea {
+      width: 100%;
+
+    }
+
+    .btn {
+
+      float: right;
+      margin-left: 7%;
+      width: 80%;
+
+
+    }
+
+
+    .con h2 {
+
+
+      border-radius: 10px;
+
+    }
+
+    .sub {
+      bottom: 0;
+      margin-top: 200%;
+      flex-wrap: nowrap;
+      left: 0;
+
+      float: left;
+    }
+
+    .sub img {
+      float: left;
+      left: 0;
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      margin-left: 25%;
+      border-radius: 50%;
+    }
+
+    .mecan {
+      margin-top: 60%;
+
+      left: 0;
+      position: absolute;
+      margin-left: 20px;
+
+
+
+
+    }
+
+    .mecan h3 {
+      font-size: 12px;
+    }
+
+    .icon {
+      left: 0;
+      justify-content: left;
     
-    
-    
+      position: absolute;
+    }
 
-    border-radius: 20px;
+    .icon i {
+      font-size: 20px;
 
-  }
-
-  .work{
-    
-    display: inline-flexbox;
-    margin-bottom: 100px;
-  }
+    }
 
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -558,313 +909,427 @@
 
   <div class="grid text-center marquee" style="--bs-columns: 3;" id="skill">
     <h2 style="color: white;padding-bottom: 30px;">Front-End development Skills</h2>
-    
-      
-  <div class="front">
-     
-        <div class="tech " >
-          <img src="html.webp" alt="" style="width: 60px;height: 60px;">
-        <br><strong >HTML</strong>
-        </div>
-         <div class="tech" >
-          <img src="css.png" alt="" style="width: 80px;height: 60px;">
-        <br><strong >CSS</strong>
-        </div>
-          <div class="tech" >
-          <img src="javascript.png" alt="" style="width: 60px;height: 60px;border-radius: 50%;">
-        <br><strong >JS</strong>
-        </div>
-         <div class="tech" >
-          <img src="react.jpg" alt="" style="width: 80px;height: 60px;border-radius: 30px;">
-        <br><strong >React library</strong>
-        </div>
-
-       
-       
-        
 
 
+    <div class="front">
 
-      
+      <div class="tech ">
+        <img src="html.webp" alt="" style="width: 60px;height: 60px;">
+        <br><strong>HTML</strong>
       </div>
-  <div>
-    <h2 style="color: white;padding-bottom: 30px;margin-top: 50px;">Framework and tools</h2>
-    
-     <div class="front">
-        <div class="tech" >
+      <div class="tech">
+        <img src="css.png" alt="" style="width: 80px;height: 60px;">
+        <br><strong>CSS</strong>
+      </div>
+      <div class="tech">
+        <img src="javascript.png" alt="" style="width: 60px;height: 60px;border-radius: 50%;">
+        <br><strong>JS</strong>
+      </div>
+      <div class="tech">
+        <img src="react.jpg" alt="" style="width: 80px;height: 60px;border-radius: 30px;">
+        <br><strong>React library</strong>
+      </div>
+
+
+
+
+
+
+
+
+    </div>
+    <div>
+      <h2 style="color: white;padding-bottom: 30px;margin-top: 50px;">Framework and tools</h2>
+
+      <div class="front">
+        <div class="tech">
           <img src="icons-hero.png" alt="" style="width: 60px;height: 60px;">
-        <br><strong >Bootstrap</strong>
+          <br><strong>Bootstrap</strong>
         </div>
-         <div class="tech" >
+        <div class="tech">
           <img src="github.jpg" style="width: 60px;height: 60px;border-radius: 50%;">
-        <br><strong >GitHub</strong>
-          </div>
-         <div class="tech" >
+          <br><strong>GitHub</strong>
+        </div>
+        <div class="tech">
           <img src="vs.jpg" alt="" style="width: 60px;height: 60px;border-radius: 50%;">
-        <br><strong >visual studio</strong>
+          <br><strong>visual studio</strong>
 
 
-    
-  
-  </div>
 
-  
- </div>
 
- 
-
-  <div class="grid text-center marquee" style="--bs-columns: 3;margin-top: 200px;" >
-    <h2 style="color: white;padding-bottom: 30px;">Back-End development Skills</h2>
-    
-    
-     <div class="front">
-     
- 
-     
-        <div class="tech " >
-          <img src="c1.jpg" alt="" style="width: 60px;height: 60px;border-radius: 50%;">
-        <br><strong >C Programming</strong>
-        </div>
-         <div class="tech" >
-          <img src="java2.jpg" alt="" style="width: 60px;height: 60px;border-radius: 50%;">
-        <br><strong >Java</strong>
-        </div>
-          <div class="tech" >
-          <img src="c++.jpg" alt="" style="width: 60px;height: 60px;border-radius: 50%;">
-        <br><strong >C++</strong>
-        </div>
-         <div class="tech" >
-          <img src="python.png" alt="" style="width: 80px;height: 60px;border-radius: 50%;">
-        <br><strong >Python</strong>
         </div>
 
 
-       
-       
-        
-
-
-
-      
       </div>
-  <div>
-    <h2 style="color: white;padding-bottom: 30px;margin-top: 50px;">Database and Server</h2>
-    
-      <div class="front">       
-         <div class="tech" >
-          <img src="jsp2.png" alt="" style="width: 60px;height: 60px;border-radius: 50%;border-radius: 1px solid white;">
-        <br><strong >JSP</strong>
+
+
+
+      <div class="grid text-center marquee" style="--bs-columns: 3;margin-top: 200px;">
+        <h2 style="color: white;padding-bottom: 30px;">Back-End development Skills</h2>
+
+
+        <div class="front">
+
+
+
+          <div class="tech ">
+            <img src="c1.jpg" alt="" style="width: 60px;height: 60px;border-radius: 50%;">
+            <br><strong>C Programming</strong>
+          </div>
+          <div class="tech">
+            <img src="java2.jpg" alt="" style="width: 60px;height: 60px;border-radius: 50%;">
+            <br><strong>Java</strong>
+          </div>
+          <div class="tech">
+            <img src="c++.jpg" alt="" style="width: 60px;height: 60px;border-radius: 50%;">
+            <br><strong>C++</strong>
+          </div>
+          <div class="tech">
+            <img src="python.png" alt="" style="width: 80px;height: 60px;border-radius: 50%;">
+            <br><strong>Python</strong>
+          </div>
+
+
+
+
+
+
+
+
+
         </div>
-         <div class="tech" >
-          <img src="mysql.png" style="width: 60px;height: 60px;border-radius: 50%;">
-        <br><strong >MYSQL</strong>
+        <div>
+          <h2 style="color: white;padding-bottom: 30px;margin-top: 50px;">Database and Server</h2>
+
+          <div class="front">
+            <div class="tech">
+              <img src="jsp2.png" alt=""
+                style="width: 60px;height: 60px;border-radius: 50%;border-radius: 1px solid white;">
+              <br><strong>JSP</strong>
+            </div>
+            <div class="tech">
+              <img src="mysql.png" style="width: 60px;height: 60px;border-radius: 50%;">
+              <br><strong>MYSQL</strong>
 
 
+
+            </div>
 
           </div>
-        
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+      <div class="menu" id="project">
+
+
+        <!--project 1-->
+
+        <h2 class="rcb">My Front-End development projects
+        </h2>
+        <div class="work">
+
+
+
+          <div class="col-md-7 newone">
+            <div class="card project-box" data-bs-toggle="modal" data-bs-target="#project2">
+              <div class="card-body text-center"
+                style="background-image: url('clgweb.jpeg');background-size: cover;object-fit: cover;width: 100%;">
+
+                <h4 class="clg">College Website</h4>
+
+
+
+                <i class="bi bi-box-arrow-up-right"
+                  style="color: black;font-weight: bold;size: 50px;float: left;font-size: 22px;"></i>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="modal fade" id="project2" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content bg-dark text-white">
+
+                <div class="modal-header border-0">
+                  <h5 class="modal-title">Project Details</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="collegeproject">
+                  <img src="college.jpeg" alt="" class="clgimage">
+                  <img src="image2.jpeg" alt="" class="clgimage">
+                  <img src="college2.jpeg" alt="" class="clgimage">
+
+
+                </div>
+
+
+
+                <div class="modal-body">
+                  <h3>Our College Website</h3>
+                  <p><strong>Category:</strong> Web Design</p>
+                  <p><strong>Project URL:</strong>
+                    <a href="https://mithundemon.github.io/JHP/" target="_blank" class="text-success">
+                      Visit Website
+                    </a>
+                  </p>
+
+                  <p>
+                    Worked as Front-End development
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 newone">
+            <div class="card project-box" data-bs-toggle="modal" data-bs-target="#project7">
+              <div class="card-body text-center" style="background-image: url('music.jpeg');background-size: cover;">
+                <h4 class="clg"
+                  style="color: black;text-shadow: 1px 1px 1px 1px black;background-color: transparent;backdrop-filter: blur(3px);">
+                  Music App</h4>
+                <i class="bi bi-box-arrow-up-right"
+                  style="color: black;font-weight: bold;size: 50px;float: left;font-size: 27px;"></i>
+
+
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal fade" id="project7" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content bg-dark text-white">
+
+                <div class="modal-header border-0">
+                  <h5 class="modal-title">Project Details</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="collegeproject">
+                  <img src="music 2.jpeg" alt="" class="clgimage">
+
+
+                </div>
+
+
+
+
+
+                <div class="modal-body">
+                  <h3>Music Website</h3>
+                  <p><strong>Category:</strong>Web Design</p>
+                  <p><strong>Project URL:</strong>
+                    <a href="https://mithundemon.github.io/music-app/" target="_blank" class="text-success">
+                      Visit Website
+                    </a>
+                  </p>
+
+                  <p>
+                    Javascript Project
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!--project 3-->
+
+        <div class="work1">
+
+
+
+
+          <div class="col-md-4 newone">
+            <div class="card project-box" data-bs-toggle="modal" data-bs-target="#project9">
+              <div class="card-body text-center"
+                style="background-image: url('currency1.jpeg');background-size: cover;">
+                <h4 class="clg"
+                  style="color: black;text-shadow: 1px 1px 1px 1px black;background-color: transparent;backdrop-filter: blur(3px);">
+                  My Currency converter</h4>
+                <i class="bi bi-box-arrow-up-right"
+                  style="color: black;font-weight: bold;size: 50px;float: left;font-size: 27px;"></i>
+
+
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal fade" id="project9" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content bg-dark text-white">
+
+                <div class="modal-header border-0">
+                  <h5 class="modal-title">Project Details</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="collegeproject">
+                  <img src="currency1.jpeg" alt="" class="clgimage">
+                  <img src="currency2.jpeg" alt="" class="clgimage">
+                  <img src="currency3.jpeg" alt="" class="clgimage">
+
+
+                </div>
+
+
+
+                <div class="modal-body">
+                  <h3> Converted Currency values in different currencies</h3>
+                  <p><strong>Category:</strong> Web Design</p>
+                  <p><strong>Project URL:</strong>
+                    <a href="https://mithundemon.github.io/Currency-converter-app/" target="_blank"
+                      class="text-success">
+                      Visit Website
+                    </a>
+                  </p>
+
+                  <p>
+                    Worked as Javascript and API
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <!--project 4-->
+
+
+
+
+
+          <div class="col-md-4 newone">
+            <div class="card project-box" data-bs-toggle="modal" data-bs-target="#project5">
+              <div class="card-body text-center" style="background-image: url('hotel1.jpeg');background-size: cover;">
+                <h4 class="clg"
+                  style="color: black;text-shadow: 1px 1px 1px 1px black;background-color: transparent;backdrop-filter: blur(3px);">
+                  Hotel Website</h4>
+                <i class="bi bi-box-arrow-up-right"
+                  style="color: black;font-weight: bold;size: 50px;float: left;font-size: 27px;"></i>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal fade" id="project5" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content bg-dark text-white">
+
+                <div class="modal-header border-0">
+                  <h5 class="modal-title">Project Details</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="collegeproject">
+                  <img src="hotel1.jpeg" alt="" class="clgimage">
+                  <img src="hotel2.jpeg" alt="" class="clgimage">
+
+
+                </div>
+
+
+                <div class="modal-body">
+                  <h3>Hotel Website</h3>
+                  <p><strong>Category:</strong> Web Design</p>
+                  <p><strong>Project URL:</strong>
+                    <a href="https://mithundemon.github.io/hotel0.1/" target="_blank" class="text-success">
+                      Visit Website
+                    </a>
+                  </p>
+
+                  <p>
+                    Worked as html,css
+
+
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
     </div>
 
-  
-  </div>
 
-  
- </div>
+    <div class="from">
+      <div class="con">
+        <h2>Contact Me</h2>
+      </div>
 
+      <div class="continar">
 
+        <div class="sub1">
 
+          <div class="in">
 
-
-
-
-
-
-
-
-  <div class="menu" id="project">
-
-    <h2 style="font-size: 30px;text-align: center;color: white;padding-top: 30px;">My Front-End development projects </h2>
-    <div class="work">
-
-      
-
-      <div class="col-md-4 newone">
-        <div class="card project-box" data-bs-toggle="modal" data-bs-target="#project2">
-          <div class="card-body text-center" style="background-image: url('clgweb.jpeg');background-size: cover;object-fit: cover;">
-            <h4 class="clg">College Website</h4>
-            <p class="clg">Web Development</p>
+            <form action="" method="post">
+              <label for="name">Name</label>
+              <input type="text" required>
+              <label for="Email">Email</label>
+              <input type="email" required>
+              <label for="textarea">Textarea</label>
+              <Textarea required placeholder="Ask about my Project.."></Textarea>
+              <button type="submit" class="btn btn-primary btn-sm">Send</button>
+            </form>
           </div>
         </div>
-      </div>
+        <div class="sub">
+          <img src="me.jpeg" alt="">
 
-
-      <div class="modal fade" id="project2" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content bg-dark text-white">
-
-            <div class="modal-header border-0">
-              <h5 class="modal-title">Project Details</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          <div class="mecan">
+            <h3>Phone Number : <Span>9019521292</Span></h3>
+            <h3>Gmail : <Span>mithunrittimath2005@gmail.com</Span></h3>
+            <h3>Address : <Span>Karnataka,Ranibennur taluk</Span></h3>
+            <div class="icon">
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-github"></i>
+              <i class="bi bi-facebook"></i>
             </div>
 
-            <div class="modal-body">
-              <h3>Phosphene</h3>
-              <p><strong>Category:</strong> Web Design</p>
-              <p><strong>Project URL:</strong>
-                <a href="https://example.com" target="_blank" class="text-success">
-                  Visit Website
-                </a>
-              </p>
-
-              <p>
-                Worked as Full Stack Developer
-              </p>
-            </div>
 
           </div>
+
         </div>
+
+
       </div>
-
-
-
-
-
-
-      <div class="col-md-4 newone">
-        <div class="card project-box" data-bs-toggle="modal" data-bs-target="#project2">
-          <div class="card-body text-center" style="background-image: url('clgweb.jpeg');background-size: cover;">
-            <h4 style="color: white;">College Website</h4>
-            <p>Web Development</p>
-
-          </div>
-        </div>
-      </div>
-
-
-      <div class="modal fade" id="project2" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content bg-dark text-white">
-
-            <div class="modal-header border-0">
-              <h5 class="modal-title">Project Details</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-            </div>
-
-            <div class="modal-body">
-              <h3>Phosphene</h3>
-              <p><strong>Category:</strong> Web Design</p>
-              <p><strong>Project URL:</strong>
-                <a href="https://example.com" target="_blank" class="text-success">
-                  Visit Website
-                </a>
-              </p>
-
-              <p>
-                Worked as Full Stack Developer
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      </div>
-
-      <div class="work1">
-
-
-
-
-      <div class="col-md-4 newone">
-        <div class="card project-box" data-bs-toggle="modal" data-bs-target="#project3">
-          <div class="card-body text-center" style="background-image: url('clgweb.jpeg');background-size: cover;">
-            <h4 style="color: white;">College Website</h4>
-            <p>Web Development</p>
-
-          </div>
-        </div>
-      </div>
-
-
-      <div class="modal fade" id="project3" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content bg-dark text-white">
-
-            <div class="modal-header border-0">
-              <h5 class="modal-title">Project Details</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-            </div>
-
-            <div class="modal-body">
-              <h3>Phosphene</h3>
-              <p><strong>Category:</strong> Web Design</p>
-              <p><strong>Project URL:</strong>
-                <a href="https://example.com" target="_blank" class="text-success">
-                  Visit Website
-                </a>
-              </p>
-
-              <p>
-                Worked as Full Stack Developer
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-      <div class="col-md-4 newone">
-        <div class="card project-box" data-bs-toggle="modal" data-bs-target="#project4">
-          <div class="card-body text-center" style="background-image: url('clgweb.jpeg');background-size: cover;">
-            <h4 style="color: white;">College Website</h4>
-            <p>Web Development</p>
-
-          </div>
-        </div>
-      </div>
-
-
-      <div class="modal fade" id="project4" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content bg-dark text-white">
-
-            <div class="modal-header border-0">
-              <h5 class="modal-title">Project Details</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-            </div>
-
-            <div class="modal-body">
-              <h3>Phosphene</h3>
-              <p><strong>Category:</strong> Web Design</p>
-              <p><strong>Project URL:</strong>
-                <a href="https://example.com" target="_blank" class="text-success">
-                  Visit Website
-                </a>
-              </p>
-
-              <p>
-                Worked as Full Stack Developer
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-
-
     </div>
-  </div>
 
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
