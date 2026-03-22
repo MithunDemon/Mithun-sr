@@ -11,8 +11,23 @@
 </head>
 
 <style>
+
+  *
+  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   body {
     background: rgb(0, 0, 19);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  
+  }
+
+  main{
+    flex: 1;
   }
 
   html,
@@ -26,9 +41,23 @@
     backdrop-filter: blur(30px);
     border-bottom: 1px solid black;
     color: white;
+    animation: fadeDown 1s ease;
 
 
   }
+
+  
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(20);
+  }
+}
+
 
   .collapse ul li a {
     color: white;
@@ -64,7 +93,24 @@
     margin-right: 10px;
     background-color: transparent;
     box-shadow: 0 10px 50px rgba(211, 214, 233, 0.25);
+     animation: fadeLeft 2s ease;
   }
+
+  
+  
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
 
   .container {
     display: flex;
@@ -75,8 +121,23 @@
     color: white;
     font-size: 57px;
     text-align: center;
+    animation: fadeRight 1s ease-out;
+
+
 
   }
+
+  
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
   .hh2 {
     font-size: 77px;
@@ -120,8 +181,11 @@
     box-shadow: 0 10px 50px rgba(211, 214, 233, 0.25);
     padding-top: 100px;
     margin: 100px;
+    
+
   }
 
+  
 
   .card-title {
     text-align: center;
@@ -274,13 +338,33 @@
     height: 150px;
     background-color: transparent;
     box-shadow: 0 10px 50px rgba(211, 214, 233, 0.25);
-    padding: 30px;
+    padding: 10px;
     color: white;
     border-radius: 10px;
     cursor: pointer;
+    justify-content: center;
 
 
   }
+
+  .tech img{
+    margin-left: 32%;
+    margin-bottom: 1px;
+
+  }
+
+  /* initial state (hidden) */
+.card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+/* when visible */
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
   .tech:hover {
     transform: scale(1.1);
@@ -340,7 +424,7 @@
 
     border-radius: 20px;
 
-    margin: 0px 15% 30% 15%;
+    margin: 0px 15% 15% 15%;
     flex-wrap: wrap;
 
 
@@ -506,6 +590,39 @@
     font-size: 30px;
   
   }
+
+
+
+.footer-modern {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+/* smooth animation */
+.footer-modern {
+  animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* responsive spacing */
+@media (max-width: 768px) {
+  .footer-modern {
+    text-align: center;
+  }
+}
+
 
 
 
@@ -901,8 +1018,10 @@
   
 </style>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
+
+  <main class="flex-fill">
   <!--NAVBER-->
   <div class="sticky-top tip">
     <nav class="navbar navbar-expand-lg tip">
@@ -988,21 +1107,21 @@
 
     <div class="front">
 
-      <div class="tech ">
-        <img src="html.webp" alt="" style="width: 60px;height: 60px;">
-        <br><strong>HTML</strong>
+      <div class="tech card">
+        <img src="html.webp" alt="" style="width: 60px;height: 60px;margin-left: 32%;">
+        <strong>HTML</strong>
       </div>
-      <div class="tech">
-        <img src="css.png" alt="" style="width: 80px;height: 60px;">
-        <br><strong>CSS</strong>
+      <div class="tech card">
+        <img src="css.png" alt="" style="width: 80px;height: 60px;margin-left: 28%;">
+        <strong>CSS</strong>
       </div>
-      <div class="tech">
-        <img src="javascript.png" alt="" style="width: 60px;height: 60px;border-radius: 50%;">
-        <br><strong>JS</strong>
+      <div class="tech card">
+        <img src="javascript.png" alt="" style="width: 60px;height: 60px;border-radius: 50%;margin-left: 29%;">
+        <strong>JS</strong>
       </div>
-      <div class="tech">
-        <img src="react.jpg" alt="" style="width: 80px;height: 60px;border-radius: 30px;">
-        <br><strong>React library</strong>
+      <div class="tech card">
+        <img src="react.jpg" alt="" style="width: 80px;height: 60px;border-radius: 30px;margin-left: 28%;">
+        <strong>React library</strong>
       </div>
 
 
@@ -1017,17 +1136,17 @@
       <h2 style="color: white;padding-bottom: 30px;margin-top: 50px;">Framework and tools</h2>
 
       <div class="front">
-        <div class="tech">
-          <img src="icons-hero.png" alt="" style="width: 60px;height: 60px;">
-          <br><strong>Bootstrap</strong>
+        <div class="tech card">
+          <img src="icons-hero.png" alt="" style="width: 60px;height: 60px;margin-left: 32%;">
+          <strong>Bootstrap</strong>
         </div>
-        <div class="tech">
-          <img src="github.jpg" style="width: 60px;height: 60px;border-radius: 50%;">
-          <br><strong>GitHub</strong>
+        <div class="tech card">
+          <img src="github.jpg" style="width: 60px;height: 60px;border-radius: 50%;margin-left: 32%;">
+          <strong>GitHub</strong>
         </div>
-        <div class="tech">
+        <div class="tech card">
           <img src="vs.jpg" alt="" style="width: 60px;height: 60px;border-radius: 50%;">
-          <br><strong>visual studio</strong>
+          <strong>visual studio</strong>
 
 
 
@@ -1047,21 +1166,21 @@
 
 
 
-          <div class="tech ">
+          <div class="tech card">
             <img src="c1.jpg" alt="" style="width: 60px;height: 60px;border-radius: 50%;">
-            <br><strong>C Programming</strong>
+            <strong>C Programming</strong>
           </div>
-          <div class="tech">
+          <div class="tech card">
             <img src="java2.jpg" alt="" style="width: 60px;height: 60px;border-radius: 50%;">
-            <br><strong>Java</strong>
+            <strong>Java</strong>
           </div>
-          <div class="tech">
+          <div class="tech card">
             <img src="c++.jpg" alt="" style="width: 60px;height: 60px;border-radius: 50%;">
-            <br><strong>C++</strong>
+            <strong>C++</strong>
           </div>
-          <div class="tech">
-            <img src="python.png" alt="" style="width: 80px;height: 60px;border-radius: 50%;">
-            <br><strong>Python</strong>
+          <div class="tech card">
+            <img src="python.png" alt="" style="width: 80px;height: 60px;border-radius: 50%;margin-left: 27%;">
+            <strong>Python</strong>
           </div>
 
 
@@ -1077,14 +1196,14 @@
           <h2 style="color: white;padding-bottom: 30px;margin-top: 50px;">Database and Server</h2>
 
           <div class="front">
-            <div class="tech">
+            <div class="tech card">
               <img src="jsp2.png" alt=""
                 style="width: 60px;height: 60px;border-radius: 50%;border-radius: 1px solid white;">
-              <br><strong>JSP</strong>
+               <strong>JSP</strong>
             </div>
-            <div class="tech">
+            <div class="tech card">
               <img src="mysql.png" style="width: 60px;height: 60px;border-radius: 50%;">
-              <br><strong>MYSQL</strong>
+              <strong>MYSQL</strong>
 
 
 
@@ -1432,11 +1551,48 @@
         ease:"power2.out"
         
       })
+ 
     </script> -->
 
-    <footer class="foot">
+    </main>
 
-    </footer>
+
+<footer class="footer-modern mt-auto">
+  <div class="container">
+
+    <div class="row text-center text-md-start align-items-center">
+
+      <!-- Left -->
+      <div class="col-md-6 mb-2 mb-md-0">
+        <p class="mb-0">© 2026 Mithun</p>
+      </div>
+
+      <!-- Right -->
+      <div class="col-md-6 text-md-end">
+        <small>Designed & Developed by Mithun</small>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+<script id="scrollanim1">
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', () => {
+  const triggerBottom = window.innerHeight * 0.8;
+
+  cards.forEach(card => {
+    const cardTop = card.getBoundingClientRect().top;
+
+    if (cardTop < triggerBottom) {
+      card.classList.add('show');
+    }
+  });
+});
+</script>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
