@@ -646,8 +646,8 @@
     }
 
     .we {
-      width: 21vh;
-      height: 21vh;
+      width: 24vh;
+      height: 26vh;
     }
 
     .hh {
@@ -659,7 +659,7 @@
     }
 
     .hh2 {
-      font-size: 29px;
+      font-size: 24px;
       color: rgba(11, 39, 194, 0.904);
     }
 
@@ -1102,17 +1102,17 @@
 
 
   <div class="grid text-center marquee" style="--bs-columns: 3;" id="skill">
-    <h2 style="color: white;padding-bottom: 5px;padding-top:40px;">Front-End development Skills</h2>
+    <h2 style="color: white;padding-bottom: 30px;">Front-End development Skills</h2>
 
 
     <div class="front">
 
       <div class="tech card">
-        <img src="html.webp" alt="" style="width: 60px;height: 60px;margin-left: 28%;">
+        <img src="html.webp" alt="" style="width: 60px;height: 60px;margin-left: 32%;">
         <strong>HTML</strong>
       </div>
       <div class="tech card">
-        <img src="css.png" alt="" style="width: 80px;height: 60px;margin-left: 24%;">
+        <img src="css.png" alt="" style="width: 80px;height: 60px;margin-left: 28%;">
         <strong>CSS</strong>
       </div>
       <div class="tech card">
@@ -1120,7 +1120,7 @@
         <strong>JS</strong>
       </div>
       <div class="tech card">
-        <img src="react.jpg" alt="" style="width: 80px;height: 60px;border-radius: 30px;margin-left: 24%;">
+        <img src="react.jpg" alt="" style="width: 80px;height: 60px;border-radius: 30px;margin-left: 28%;">
         <strong>React library</strong>
       </div>
 
@@ -1179,7 +1179,7 @@
             <strong>C++</strong>
           </div>
           <div class="tech card">
-            <img src="python.png" alt="" style="width: 80px;height: 60px;border-radius: 50%;margin-left: 25%;">
+            <img src="python.png" alt="" style="width: 80px;height: 60px;border-radius: 50%;margin-left: 27%;">
             <strong>Python</strong>
           </div>
 
@@ -1484,13 +1484,13 @@
 
           <div class="in">
 
-            <form action="" method="post">
+            <form id="myForm">
               <label for="name">Name</label>
-              <input type="text" required>
-              <label for="Email">Email</label>
-              <input type="email" required>
+              <input type="text" id="name" required>
+              <label for="Email" >Email</label>
+              <input type="email" id="email" required>
               <label for="textarea">Textarea</label>
-              <Textarea required placeholder="Ask about my Project.."></Textarea>
+              <Textarea required placeholder="Ask about my Project.." id="message"></Textarea>
               <button type="submit" class="btn btn-primary btn-sm">Send</button>
             </form>
           </div>
@@ -1593,8 +1593,60 @@ window.addEventListener('scroll', () => {
 });
 </script>
 
+<script type="module">
 
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
+// 🔥 YOUR REAL CONFIG (paste from Firebase)
+const firebaseConfig = {
+  
+  apiKey: "AIzaSyXXXX",
+  authDomain: "mywebsite-d4932.firebaseapp.com",
+  projectId: "mywebsite-d4932",
+  storageBucket: "mywebsite-d4932.appspot.com",
+  messagingSenderId: "294375065897",
+  appId: "1:294375065897:web:xxxx"
+
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+// ✅ WAIT UNTIL PAGE LOAD
+window.addEventListener("DOMContentLoaded", () => {
+
+  const form = document.getElementById("myForm");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    console.log("Sending:", name, email, message);
+
+    try {
+      await addDoc(collection(db, "users"), {
+        name: name,
+        email: email,
+        message: message
+      });
+
+      alert("✅ Data Saved Successfully");
+
+      form.reset(); // clear form
+
+    } catch (error) {
+  console.error("FULL ERROR:", error);
+  alert(error.message);
+
+    }
+  });
+
+});
+</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"></script>
